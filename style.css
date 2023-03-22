@@ -1,0 +1,52 @@
+h1 {
+    margin: 40px;
+}
+
+.correct-true {
+    opacity: 0;
+    animation-name: fadeOut;
+    animation-duration: 2s;
+    font-size: 15rem;
+    color: red;
+}
+
+.correct-true:after {
+    content: "〇";
+}
+
+.correct-false {
+    opacity: 0;
+    animation-name: fadeOut;
+    animation-duration: 2s;
+    font-size: 15rem;
+    color: blue;
+}
+
+.correct-false:after {
+    content: "×";
+}
+
+.center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#quiz-str {
+    font-size: 1.27em;
+    margin-top: 1.3em;
+}
